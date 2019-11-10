@@ -1,7 +1,6 @@
 package es.fbenavente.kcomplementaypairs;
 
 import lombok.Value;
-import org.hamcrest.Matchers;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -13,6 +12,8 @@ import java.util.List;
 import static java.util.Arrays.asList;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsInAnyOrder;
+import static org.hamcrest.Matchers.iterableWithSize;
 
 @Value
 @RunWith(Parameterized.class)
@@ -46,7 +47,7 @@ public class KComplementaryPairsTest {
         List<Pair<Integer>> pairs = kComplementaryPairs.getKComplementaryPairs(array, k);
 
         assertThat(pairs, notNullValue());
-        assertThat(pairs, Matchers.iterableWithSize(expectedResults.size()));
-        assertThat(pairs, Matchers.containsInAnyOrder(expectedResults.toArray()));
+        assertThat(pairs, iterableWithSize(expectedResults.size()));
+        assertThat(pairs, containsInAnyOrder(expectedResults.toArray()));
     }
 }
