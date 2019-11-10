@@ -11,7 +11,6 @@ import java.util.Collection;
 import java.util.List;
 
 import static java.util.Arrays.asList;
-import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -26,7 +25,17 @@ public class KComplementaryPairsTest {
     @Parameters
     public static Collection<Object[]> data() {
         return asList(new Object[][]{
-                {asList(1, 5, 9), 10, asList(new Pair<>(0, 2))}
+                {asList(1, 5, 9), 10, asList(new Pair<>(0, 2))},
+                {
+                        asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9),
+                        10,
+                        asList(
+                                new Pair<>(1, 9),
+                                new Pair<>(2, 8),
+                                new Pair<>(3, 7),
+                                new Pair<>(4, 6)
+                        )
+                }
         });
     }
 
@@ -37,7 +46,7 @@ public class KComplementaryPairsTest {
         List<Pair<Integer>> pairs = kComplementaryPairs.getKComplementaryPairs(array, k);
 
         assertThat(pairs, notNullValue());
-        assertThat(pairs.size(), equalTo(1));
+        assertThat(pairs, Matchers.iterableWithSize(expectedResults.size()));
         assertThat(pairs, Matchers.containsInAnyOrder(expectedResults.toArray()));
     }
 }
