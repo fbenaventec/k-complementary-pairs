@@ -1,11 +1,11 @@
 package es.fbenavente.kcomplementaypairs;
 
-import lombok.Value;
+import lombok.Data;
 
 import java.util.List;
 
-@Value
+@Data
 public class KComplementaryPairsRequest {
-    private final List<Integer> values;
-    private final int k;
+    private List<Integer> values;
+    private int k;
 }
