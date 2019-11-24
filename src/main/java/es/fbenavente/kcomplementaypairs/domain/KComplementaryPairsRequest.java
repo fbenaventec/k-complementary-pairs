@@ -1,4 +1,4 @@
-package es.fbenavente.kcomplementaypairs;
+package es.fbenavente.kcomplementaypairs.domain;
 
 import lombok.Data;
 

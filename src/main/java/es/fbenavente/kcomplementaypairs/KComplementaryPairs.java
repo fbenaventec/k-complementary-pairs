@@ -1,5 +1,7 @@
 package es.fbenavente.kcomplementaypairs;
 
+import es.fbenavente.kcomplementaypairs.domain.Pair;
+
 import java.util.ArrayList;
 import java.util.List;
 

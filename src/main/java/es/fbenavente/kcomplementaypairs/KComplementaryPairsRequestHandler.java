@@ -2,6 +2,8 @@ package es.fbenavente.kcomplementaypairs;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
+import es.fbenavente.kcomplementaypairs.domain.KComplementaryPairsRequest;
+import es.fbenavente.kcomplementaypairs.domain.Pair;
 
 import java.util.List;
 

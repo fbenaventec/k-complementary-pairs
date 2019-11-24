@@ -1,6 +1,7 @@
 package es.fbenavente.kcomplementaypairs;
 
 
+import es.fbenavente.kcomplementaypairs.domain.Pair;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ArgumentsSource;
 
