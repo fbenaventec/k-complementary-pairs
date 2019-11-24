@@ -7,13 +7,17 @@ There are two ways for execute this program:
  - Online
 
 ### Offline
-To execute offline it's necessary package the program with maven and run with java:
+To execute offline it's necessary package the program with maven:
+ ```shell script
+mvn clean install
+ ```
+In second place, run with java:
 
-**NOTE this program works with Java 11**
 ```shell script
 # Sample with text 10 and numbers from 0 to 9
 java -jar target/k-complementary-pairs-1.0-SNAPSHOT.jar 10 0,1,2,3,4,5,6,7,8,9
 ```
+**NOTE this program works with Java 11**
 
 ### Online
 To execute this program online execute a HTTP call to:
