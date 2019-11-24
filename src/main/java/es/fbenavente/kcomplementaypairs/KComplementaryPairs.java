@@ -11,7 +11,7 @@ public class KComplementaryPairs {
             for (int j = i + 1; j < values.size(); j++) {
                 int jValue = values.get(j);
                 if (k == iValue + jValue) {
-                    pairs.add(new Pair(i, j));
+                    pairs.add(new Pair<>(i, j));
                 }
             }
         }
