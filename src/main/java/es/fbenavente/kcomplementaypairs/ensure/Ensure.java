@@ -23,10 +23,10 @@ public class Ensure {
             String value,
             String message,
             Class<T> exceptionClass) throws T {
+        // TODO replace this ensure by other not based on exceptions
         try {
             Integer.parseInt(value);
         } catch (NumberFormatException numberFormatException) {
-            // TODO replace this ensure by other not based on exceptions
             throw CustomExceptionFactory.instanceOf(exceptionClass, message, numberFormatException);
         }
     }

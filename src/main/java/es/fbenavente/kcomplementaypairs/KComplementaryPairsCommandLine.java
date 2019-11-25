@@ -15,6 +15,7 @@ public class KComplementaryPairsCommandLine {
 
     private static final String VALUES_SEPARATOR = "\\s*,\\s*";
 
+    @SuppressWarnings("squid:S106")
     public static void main (String ... args) throws ArgumentException {
         KComplementaryPairs kComplementaryPairs = new KComplementaryPairs();
         ensureThatArrayLengthIsGreaterOrEqualThan(args, 2, ARGUMENTS_MISSING, ArgumentException.class);

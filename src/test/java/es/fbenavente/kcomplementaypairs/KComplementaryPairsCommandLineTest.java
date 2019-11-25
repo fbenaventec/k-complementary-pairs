@@ -23,6 +23,7 @@ public class KComplementaryPairsCommandLineTest {
         assertThrows(ArgumentException.class, () -> KComplementaryPairsCommandLine.main("3", "n,2,3"));
     }
 
+    @SuppressWarnings("squid:S2699")
     @Test
     public void when_calls_main_program_with_valid_parameters_expected_no_errors() throws ArgumentException {
         KComplementaryPairsCommandLine.main("3", "1,2,3");
