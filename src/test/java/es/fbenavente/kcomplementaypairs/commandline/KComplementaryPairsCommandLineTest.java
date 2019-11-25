@@ -1,5 +1,6 @@
-package es.fbenavente.kcomplementaypairs;
+package es.fbenavente.kcomplementaypairs.commandline;
 
+import es.fbenavente.kcomplementaypairs.commandline.KComplementaryPairsCommandLine;
 import es.fbenavente.kcomplementaypairs.exception.ArgumentException;
 import org.junit.jupiter.api.Test;
 

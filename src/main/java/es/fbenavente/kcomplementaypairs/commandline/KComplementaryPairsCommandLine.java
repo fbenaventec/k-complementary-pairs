@@ -1,5 +1,6 @@
-package es.fbenavente.kcomplementaypairs;
+package es.fbenavente.kcomplementaypairs.commandline;
 
+import es.fbenavente.kcomplementaypairs.KComplementaryPairs;
 import es.fbenavente.kcomplementaypairs.domain.Pair;
 import es.fbenavente.kcomplementaypairs.ensure.Ensure;
 import es.fbenavente.kcomplementaypairs.exception.ArgumentException;

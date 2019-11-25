@@ -48,7 +48,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>es.fbenavente.kcomplementaypairs.KComplementaryPairsCommandLine</mainClass>
+                            <mainClass>es.fbenavente.kcomplementaypairs.commandline.KComplementaryPairsCommandLine</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
